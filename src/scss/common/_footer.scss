@@ -1,18 +1,16 @@
 // 
 // Desktop
 // 
-@media screen and (min-width: 1000px) {
-    footer {
-        background: $navigation-color;
+footer {
+    background: $navigation-color;
 
-        .footer {
-            &__title {
-                padding: 100px;
-                margin: 0;
-                font-size: 18px;
-                text-align: center;
-                color: white;
-            }
+    .footer {
+        &__title {
+            padding: 100px;
+            margin: 0;
+            font-size: 18px;
+            text-align: center;
+            color: white;
         }
     }
 }

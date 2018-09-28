@@ -1,66 +1,64 @@
 // 
 // Desktop
 // 
-@media screen and (min-width: 1000px) {
-    .menu {
-        background: $navigation-color;
+.menu {
+    background: $navigation-color;
 
-        &__list {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            list-style: none;
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        list-style: none;
 
-            &__item {
-                a {
-                    margin: 0;
-                    padding: 10px;
-                    padding-right: 15px;
-                    padding-left: 15px;
-                    height: $header-desktop-height - 20px;
-                    display: block;
-                    text-decoration: none;
-                    font-size: 18px;
-                    color: white;
+        &__item {
+            a {
+                margin: 0;
+                padding: 10px;
+                padding-right: 15px;
+                padding-left: 15px;
+                height: $header-desktop-height - 20px;
+                display: block;
+                text-decoration: none;
+                font-size: 18px;
+                color: white;
 
-                    transition: background-color 0.2s;
+                transition: background-color 0.2s;
 
-                    &:hover {
-                        background-color: rgba(255, 255, 255, 0.5);
-                    }
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.5);
                 }
             }
         }
     }
+}
 
-    .fixed {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: $navigation-color;
-        z-index: 1;
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $navigation-color;
+    z-index: 1;
 
-        .header-mobile {
-            display: none;
+    .header-mobile {
+        display: none;
+    }
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+
+    .top-image {
+        img {
+            width: 100%;
+            vertical-align: bottom;
         }
     }
 
-    .header {
-        position: relative;
-        z-index: 1;
-
-        .top-image {
-            img {
-                width: 100%;
-                vertical-align: bottom;
-            }
-        }
-
-        .hidden {
-            visibility: hidden;
-        }
+    .hidden {
+        visibility: hidden;
     }
 }
 
