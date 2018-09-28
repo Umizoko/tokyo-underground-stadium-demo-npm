@@ -187,8 +187,8 @@ export function entry() {
 		// service workerの登録
 		// 
 		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('/tokyo-underground-stadium-demo/serviceWorker.js', {
-					scope: '/tokyo-underground-stadium-demo/'
+			navigator.serviceWorker.register('/tokyo-underground-stadium-demo-npm/serviceWorker.js', {
+					scope: '/tokyo-underground-stadium-demo-npm/'
 				})
 				.then((registration) => {
 					console.log('ServiceWorker registration successful with scope: ', registration.scope);
