@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+// 
+// 共通のスタイル
+// 
+@import './common/common';
+@import './common/header';
+@import './common/footer';
+
+// 
+// htmlごとのスタイル
+// 
+@import './pages/index';
+@import './pages/information';
+@import './pages/guide';
+@import './pages/access';
+@import './pages/contact';

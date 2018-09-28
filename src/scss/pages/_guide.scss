@@ -1,0 +1,54 @@
+// 
+// Desktop
+// 
+@media screen and (min-width: 1000px) {
+    .guide {
+
+        margin: 0 auto;
+        width: 100%;
+
+        &-title {
+            font-size: 36px;
+            color: white;
+        }
+
+        &-contents {
+            &__list {
+                margin: 0;
+                padding: 0;
+
+                &__item {
+                    margin-bottom: 50px;
+                    list-style: none;
+
+                    .guide-contents__map {
+                        &__title {
+                            color: white;
+                        }
+
+                        &__image {
+                            width: 100%;
+                            border-radius: 5px;
+                            pointer-events: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 
+// Mobile
+// 
+@media screen and (max-width: 1000px) {
+
+    // guide
+    .guide {
+        &-title {
+            font-size: 36px;
+            color: white;
+            text-align: center;
+        }
+    }
+}

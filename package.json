@@ -1,0 +1,33 @@
+{
+  "name": "tokyo-underground-stadium-npm",
+  "version": "1.0.0",
+  "description": "This page is demo site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server",
+    "watch": "webpack --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "node-sass": "^4.9.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "animejs": "^2.2.0",
+    "flickity": "^2.1.2",
+    "jquery": "^2.2.4"
+  }
+}

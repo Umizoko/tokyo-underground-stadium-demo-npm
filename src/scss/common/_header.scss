@@ -1,0 +1,189 @@
+// 
+// Desktop
+// 
+@media screen and (min-width: 1000px) {
+    .menu {
+        background: $navigation-color;
+
+        &__list {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+
+            &__item {
+                a {
+                    margin: 0;
+                    padding: 10px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    height: $header-desktop-height - 20px;
+                    display: block;
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: white;
+
+                    transition: background-color 0.2s;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.5);
+                    }
+                }
+            }
+        }
+    }
+
+    .fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $navigation-color;
+        z-index: 1;
+
+        .header-mobile {
+            display: none;
+        }
+    }
+
+    .header {
+        position: relative;
+        z-index: 1;
+
+        .top-image {
+            img {
+                width: 100%;
+                vertical-align: bottom;
+            }
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+    }
+}
+
+// 
+// Mobile
+// 
+@media screen and (max-width: 1000px) {
+    .open {
+        left: 0 !important;
+        transition: left 300ms linear;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        background: $navigation-color;
+        width: 300px;
+        height: 100vh;
+        transition: left 300ms linear;
+
+        &__list {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            list-style: none;
+
+            &__item {
+                a {
+                    margin: 0;
+                    padding: 10px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    height: $header-desktop-height - 20px;
+                    display: block;
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: white;
+
+                    transition: background-color 0.2s;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.5);
+                    }
+                }
+            }
+        }
+    }
+
+    .fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: $header-mobile-height;
+        background-color: $navigation-color;
+        z-index: 2;
+
+        .header-mobile {
+            display: block;
+            color: white;
+
+            .fading {
+                width: 100vw;
+                opacity: 0.8;
+                left: 0;
+            }
+
+            &__mat {
+                position: fixed;
+                top: 0;
+                left: -100vw;
+                width: 100vw;
+                height: 100vh;
+                background-color: black;
+                opacity: 0;
+                transition: opacity 300ms linear, left 300ms linear;
+            }
+
+            &__title {
+                margin: 0;
+                padding: 10px;
+                text-align: right;
+            }
+
+            &__menu-icon {
+                display: inline-block;
+                margin: 0;
+                padding: 10px;
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    .fixed::after {
+        content: "";
+        display: block;
+        position: relative;
+    }
+
+    .header {
+        position: block;
+        z-index: 0;
+
+        .top-image {
+            margin-top: $header-mobile-height;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                min-height: 300px;
+                max-height: 373px;
+                width: auto;
+            }
+        }
+
+        .menu {
+            display: none;
+        }
+    }
+}
