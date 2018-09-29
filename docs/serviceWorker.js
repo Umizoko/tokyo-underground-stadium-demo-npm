@@ -1,7 +1,12 @@
 var CACHE_NAME = 'static-v1';
 var urlsToCache = [
     'index.html',
-    'js/bundle.js',
+    'js/vender.bundle.js',
+    'js/index.bundle.js',
+    'js/information.bundle.js',
+    'js/guide.bundle.js',
+    'js/access.bundle.js',
+    'js/contact.bundle.js',
     'assets/image/logo-x516.png',
     'assets/image/Desktop/guide-map.jpg',
     'assets/image/Desktop/home-about.jpg',

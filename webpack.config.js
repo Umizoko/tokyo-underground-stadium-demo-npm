@@ -14,14 +14,28 @@ module.exports = {
     },
 
     // mainとなるJavaScriptファイル（エントリーポイント）
-    entry: `./src/js/index.js`,
+    entry: {
+        "index": "./src/js/index.js",
+        "information": "./src/js/information.js",
+        "guide": "./src/js/guide.js",
+        "access": "./src/js/access.js",
+        "contact": "./src/js/contact.js"
+    },
 
     // fileの出力設定
     output: {
         // 出力ファイルのディレクトリ名
         path: `${__dirname}/docs/js`,
         // 出力ファイル名
-        filename: 'bundle.js'
+        filename: '[name].bundle.js'
+    },
+
+    // libraryの共有
+    optimization: {
+        splitChunks:{
+            name: 'vender',
+            chunks: 'initial',
+        }
     },
 
     // source-map方式でないと、cssの元ソースが追跡できない
