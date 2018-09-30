@@ -12,6 +12,8 @@ import {
     logo
 } from './modules/logo';
 
+import './modules/custom-footer';
+
 // style.sassの読み込み
 import '../scss/contact.scss'
 

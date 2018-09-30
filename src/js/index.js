@@ -26,6 +26,8 @@ import {
     slideshow
 } from './modules/slideshow';
 
+import './modules/custom-footer';
+
 // style.sassの読み込み
 import 'flickity/dist/flickity.min.css';
 import '../scss/index.scss'

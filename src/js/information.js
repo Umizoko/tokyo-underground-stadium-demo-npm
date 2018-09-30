@@ -16,6 +16,8 @@ import {
     button
 } from './modules/button';
 
+import './modules/custom-footer';
+
 // style.sassの読み込み
 import '../scss/information.scss'
 
