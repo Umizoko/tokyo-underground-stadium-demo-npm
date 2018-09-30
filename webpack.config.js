@@ -32,7 +32,7 @@ module.exports = {
 
     // libraryの共有
     optimization: {
-        splitChunks:{
+        splitChunks: {
             name: 'vender',
             chunks: 'initial',
         }
@@ -44,8 +44,8 @@ module.exports = {
     // css-loaderの設定
     module: {
         rules: [{
-                // Sass file version
-                test: /\.scss/,
+                // Sass css file
+                test: /\.(scss|css)/,
                 use: [
                     // リンクタグを出力
                     'style-loader',

@@ -27,6 +27,7 @@ import {
 } from './modules/slideshow';
 
 // style.sassの読み込み
+import 'flickity/dist/flickity.min.css';
 import '../scss/index.scss'
 
 main();
