@@ -67,39 +67,6 @@
             padding-right: 10px;
             font-size: 24px;
         }
-
-        .about-button {
-            display: inline-block;
-
-            a {
-                display: inline-block;
-                width: 180px;
-                height: 60px;
-                color: white;
-                font-size: 18px;
-
-                line-height: 1.5;
-                text-decoration: none;
-                position: relative;
-
-                svg {
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                }
-
-                span {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    width: 100%;
-                    transform: translateX(-50%) translateY(-50%);
-                    text-align: center;
-                }
-            }
-        }
     }
 
     &__right {
@@ -107,10 +74,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        background: url("../assets/image/Desktop/home-about.jpg"); 
-        background-size: 100%;
-        background-repeat: no-repeat;
 
         img {
 
@@ -193,39 +156,6 @@
             }
         }
     }
-
-    .event-button {
-        text-align: center;
-
-        a {
-            display: inline-block;
-            width: 180px;
-            height: 60px;
-            color: white;
-            font-size: 18px;
-
-            line-height: 1.5;
-            text-decoration: none;
-            position: relative;
-
-            svg {
-                position: absolute;
-                left: 0;
-                top: 0;
-                right: 0;
-                bottom: 0;
-            }
-
-            span {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 100%;
-                transform: translateX(-50%) translateY(-50%);
-                text-align: center;
-            }
-        }
-    }
 }
 
 .news {
@@ -278,39 +208,6 @@
 
         }
     }
-
-    &-button {
-        text-align: center;
-
-        a {
-            display: inline-block;
-            width: 180px;
-            height: 60px;
-            color: black;
-            font-size: 18px;
-
-            line-height: 1.5;
-            text-decoration: none;
-            position: relative;
-
-            svg {
-                position: absolute;
-                left: 0;
-                top: 0;
-                right: 0;
-                bottom: 0;
-            }
-
-            span {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 100%;
-                transform: translateX(-50%) translateY(-50%);
-                text-align: center;
-            }
-        }
-    }
 }
 
 // 
@@ -325,17 +222,6 @@
             width: 100%;
             justify-content: center;
             z-index: 1;
-
-            .about-button {
-                a {
-                    font-size: 18px;
-                    line-height: 2;
-
-                    &:hover {
-                        background-color: rgba(0, 0, 0, 0);
-                    }
-                }
-            }
         }
 
         position:relative;
@@ -417,10 +303,6 @@
                 }
             }
         }
-
-        .event-button {
-            display: none;
-        }
     }
 
     // news
@@ -445,17 +327,6 @@
                     }
                 }
 
-            }
-        }
-
-        &-button {
-            a {
-                font-size: 18px;
-                line-height: 2;
-
-                &:hover {
-                    background-color: rgba(0, 0, 0, 0);
-                }
             }
         }
     }

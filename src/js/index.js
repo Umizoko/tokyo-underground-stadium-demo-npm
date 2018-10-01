@@ -19,13 +19,10 @@ import {
 } from './modules/scroll';
 
 import {
-    button
-} from './modules/button';
-
-import {
     slideshow
 } from './modules/slideshow';
 
+import './modules/custom-button';
 import './modules/custom-footer';
 
 // style.sassの読み込み
@@ -37,7 +34,6 @@ main();
 loading();
 drawer();
 scroll();
-button();
 slideshow();
 
 // 

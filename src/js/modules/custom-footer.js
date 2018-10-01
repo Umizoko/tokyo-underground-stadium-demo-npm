@@ -61,11 +61,9 @@ class CustomFooter extends HTMLElement {
     }
 
     connectedCallback(){
-        console.log('connected callback.');
     }
 
     disconnectedCallback(){
-        console.log('disconnected callback.');
     }
 }
 
