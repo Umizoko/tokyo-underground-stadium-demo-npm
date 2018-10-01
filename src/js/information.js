@@ -19,7 +19,10 @@ import {
 import './modules/custom-footer';
 
 // style.sassの読み込み
-import '../scss/information.scss'
+// import '@fortawesome/fontawesome-free/js/fontawesome.min.js';
+// const fontawesome = require('@fortawesome/fontawesome-free')
+
+import '../scss/information.scss';
 
 main();
 

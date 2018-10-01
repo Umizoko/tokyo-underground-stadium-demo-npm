@@ -8,7 +8,6 @@ var urlsToCache = [
     'js/access.bundle.js',
     'js/contact.bundle.js',
     'assets/image/logo-x516.png',
-    'assets/image/Desktop/guide-map.jpg',
     'assets/image/Desktop/home-about.jpg',
     'assets/image/Desktop/home-event01.jpg',
     'assets/image/Desktop/home-event02.jpg',
