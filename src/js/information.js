@@ -14,9 +14,7 @@ import {
 
 import './modules/custom-footer';
 
-// style.sassの読み込み
 import '@fortawesome/fontawesome-free/js/all';
-
 import '../scss/information.scss';
 
 main();
