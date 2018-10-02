@@ -12,19 +12,6 @@ export function scroll() {
             curr_scroll_top = $(this).scrollTop();
 
             // 
-            // index.html headerのmenuがかぶるのを修正
-            // 
-            if (document.querySelector(".header") != null) {
-                if (curr_scroll_top <= $(".header").find(".menu").offset().top) {
-                    $(".header").find(".menu").removeClass("hidden");
-                    $('.header').css('z-index', '1');
-                } else if (curr_scroll_top > $(".header").find(".menu").offset().top) {
-                    $(".header").find(".menu").addClass("hidden");
-                    $('.header').css('z-index', '0');
-                }
-            }
-
-            // 
             // 各コンテンツのスライドアニメーションの設定
             // 
             let offsetY = 300; // スクロールの発火位置を300px上にずらす

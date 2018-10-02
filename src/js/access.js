@@ -4,14 +4,9 @@ import {
     main
 } from './modules/main';
 
-import {
-    drawer
-} from './modules/drawer';
-
 import './modules/custom-footer';
+import './modules/custom-drawer';
 
 import '../scss/access.scss'
 
 main();
-
-drawer();

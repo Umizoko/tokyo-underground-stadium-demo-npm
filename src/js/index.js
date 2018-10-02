@@ -11,10 +11,6 @@ import {
 } from './modules/loading';
 
 import {
-    drawer
-} from './modules/drawer';
-
-import {
     scroll
 } from './modules/scroll';
 
@@ -24,6 +20,7 @@ import {
 
 import './modules/custom-button';
 import './modules/custom-footer';
+import './modules/custom-drawer';
 
 // style.sassの読み込み
 import 'flickity/dist/flickity.min.css';
@@ -32,7 +29,6 @@ import '../scss/index.scss'
 main();
 
 loading();
-drawer();
 scroll();
 slideshow();
 

@@ -5,19 +5,16 @@ import {
 } from './modules/main';
 
 import {
-    drawer
-} from './modules/drawer';
-
-import {
     scroll
 } from './modules/scroll';
 
 import './modules/custom-footer';
+import './modules/custom-drawer';
+
 
 import '@fortawesome/fontawesome-free/js/all';
 import '../scss/information.scss';
 
 main();
 
-drawer();
 scroll();
