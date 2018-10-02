@@ -31,12 +31,12 @@ module.exports = {
     },
 
     // libraryの共有
-    optimization: {
-        splitChunks: {
-            name: 'vender',
-            chunks: 'initial',
-        }
-    },
+    // optimization: {
+    //     splitChunks: {
+    //         name: 'vender',
+    //         chunks: 'initial',
+    //     }
+    // },
 
     // source-map方式でないと、cssの元ソースが追跡できない
     devtool: 'source-map',

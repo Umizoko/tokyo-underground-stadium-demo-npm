@@ -70,7 +70,6 @@ class CustomButton extends HTMLElement {
 
         this.shadow.innerHTML = CustomButton.style;
 
-
         var root = document.createElement('div');
         root.className = 'custom-button';
         this.shadow.appendChild(root);

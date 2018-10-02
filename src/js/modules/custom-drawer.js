@@ -1,7 +1,6 @@
 // 
 // Custom drawer
 // 
-import $ from 'jquery';
 class CustomDrawer extends HTMLElement {
 
     static get style() {
@@ -198,8 +197,7 @@ class CustomDrawer extends HTMLElement {
         root.className = 'fixed';
         this.shadow.appendChild(root);
 
-        if(window.location.href.split('/').pop() === '' || window.location.href.split('/').pop() === 'index.html'){
-            root.innerHTML = `
+        root.innerHTML = `
             <div class="header-mobile">
                 <p class="header-mobile__title">Tokyo Underground<br>
                     Stadium</p>
@@ -207,6 +205,11 @@ class CustomDrawer extends HTMLElement {
                     <svg aria-hidden="true" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="white" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></div>
                 <div class="header-mobile__mat"></div>
             </div>
+        `;
+
+        // index.html
+        if(window.location.href.split('/').pop() === '' || window.location.href.split('/').pop() === 'index.html'){
+            root.innerHTML += `
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__list__item header-mobile"><img src="./assets/image/logo-x516.png" alt="" srcset="" width=100%></li>
@@ -218,15 +221,9 @@ class CustomDrawer extends HTMLElement {
                 </ul>
             </nav>
         `;
+        // index.html以外
         } else {
-            root.innerHTML = `
-            <div class="header-mobile">
-                <p class="header-mobile__title">Tokyo Underground<br>
-                    Stadium</p>
-                <div class="header-mobile__menu-icon">
-                    <svg aria-hidden="true" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="white" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></div>
-                <div class="header-mobile__mat"></div>
-            </div>
+            root.innerHTML += `
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__list__item header-mobile"><img src="../assets/image/logo-x516.png" alt="" srcset="" width=100%></li>
@@ -240,6 +237,9 @@ class CustomDrawer extends HTMLElement {
         `;
         }
 
+        // 
+        // index.htmlのときのみimageを組み込んだdrawerにする
+        // 
         const rootbrotherindex = document.createElement('div');
         rootbrotherindex.className = 'header';
         this.shadow.appendChild(rootbrotherindex);
@@ -254,7 +254,7 @@ class CustomDrawer extends HTMLElement {
                         <li class="menu__list__item"><a href="./html/access.html">Access</a></li>
                         <li class="menu__list__item"><a href="./html/contact.html">Contact</a></li>
                     </ul>
-                    </nav>
+                </nav>
             `;
         }
 
@@ -281,17 +281,20 @@ class CustomDrawer extends HTMLElement {
 
 
         window.addEventListener('load', () => {
+            // 
+            // index.htmlのときのみの処理
+            // 
             if(!(window.location.href.split('/').pop() == '' 
             || window.location.href.split('/').pop() == 'index.html'))
                 return;
 
             let curr_scroll_top;
-            $(window).scroll(function () {
-                
-                curr_scroll_top = $(this).scrollTop();
+            window.addEventListener('scroll', () => {
+
                 // 
                 // index.html headerのmenuがかぶるのを修正
                 // 
+                curr_scroll_top = window.scrollY;
                 if (curr_scroll_top <= rootbrotherindex.querySelector('.menu').offsetTop) {
                     rootbrotherindex.querySelector('.menu').classList.remove('hidden');
                     rootbrotherindex.style.zIndex = '1';
@@ -302,8 +305,6 @@ class CustomDrawer extends HTMLElement {
             });
         });
     }
-
-
 }
 
 customElements.define('custom-drawer', CustomDrawer);
