@@ -9,8 +9,11 @@ Tokyo Underground Stadium Demoをnpmで書きかえたサイト
 npmとwebpackで書き換えたヴァージョンです。
 sass, jsをそれぞれモジュール化しました。
 Web Componentsもfooterで組み込んでいます。
+netlifyでのホスティングも試しています。
 
 website: [https://umizoko.github.io/tokyo-underground-stadium-demo-npm/](https://umizoko.github.io/tokyo-underground-stadium-demo-npm/)
+
+netlify: [https://tokyo-underground-stadium-demo-npm.netlify.com/](https://tokyo-underground-stadium-demo-npm.netlify.com/)
 
 ## Requirement
 - npm5
