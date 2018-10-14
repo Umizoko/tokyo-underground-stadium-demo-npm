@@ -24,6 +24,3 @@ netlify: [https://tokyo-underground-stadium-demo-npm.netlify.com/](https://tokyo
 
 ## Note
 2018/10/01現在Chrome, Android Chromeでのブラウザでは動作しますが,その他（Firefox、 Edge）ではスタイルが崩れ正常に動作しません。
-
-test
-
