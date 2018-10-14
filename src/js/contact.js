@@ -1,5 +1,7 @@
 // エントリーポイント
 // Moduleをimport
+import '@webcomponents/webcomponentsjs/webcomponents-bundle';
+
 import {
     main
 } from './modules/main';

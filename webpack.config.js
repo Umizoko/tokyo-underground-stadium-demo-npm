@@ -1,3 +1,4 @@
+
 //  モード値をproductionに設定すると最適化された状態で、
 // 　developmentに設定するとソースマップが有効の状態で出力される
 const MODE = 'production';
@@ -5,6 +6,7 @@ const MODE = 'production';
 module.exports = {
 
     mode: MODE,
+
 
     // ローカル環境を立ち上げる
     // 実行時にブラウザが自動的にlocalhostを開く
@@ -29,14 +31,6 @@ module.exports = {
         // 出力ファイル名
         filename: '[name].bundle.js'
     },
-
-    // libraryの共有
-    // optimization: {
-    //     splitChunks: {
-    //         name: 'vender',
-    //         chunks: 'initial',
-    //     }
-    // },
 
     // source-map方式でないと、cssの元ソースが追跡できない
     devtool: 'source-map',

@@ -1,4 +1,7 @@
 // エントリーポイント
+import '@webcomponents/webcomponentsjs/webcomponents-bundle';
+// import '@webcomponents/webcomponentsjs/webcomponents-loader';
+
 import $ from 'jquery';
 
 // Moduleをimport
