@@ -1,6 +1,9 @@
-// 
-// Custom drawer
-// 
+/**
+ * Desktop/Mobile対応のDrawer
+ *
+ * @class CustomDrawer
+ * @extends {HTMLElement}
+ */
 class CustomDrawer extends HTMLElement {
 
     static get style() {

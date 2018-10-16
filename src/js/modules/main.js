@@ -1,6 +1,8 @@
-//
-// Libraryをimport
-//	
+/**
+ * 共通の処理
+ *
+ * @export
+ */
 export function main() {
 	// 
 	// service workerの登録

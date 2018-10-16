@@ -1,9 +1,11 @@
-// 
-// Slideshowの設定
-// 
 import Flickity from 'flickity';
 import $ from 'jquery';
 
+/**
+ * Slideshowの設定
+ *
+ * @export
+ */
 export function slideshow(){
 
 	document.addEventListener("DOMContentLoaded", () => {

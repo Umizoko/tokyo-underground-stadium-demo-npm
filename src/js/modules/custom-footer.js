@@ -1,6 +1,10 @@
-// 
-// CustomのFooter
-// 
+
+/**
+ * Desktop/Mobile対応のFooter
+ *
+ * @class CustomFooter
+ * @extends {HTMLElement}
+ */
 class CustomFooter extends HTMLElement {
 
     static get style() {
@@ -58,12 +62,6 @@ class CustomFooter extends HTMLElement {
     
             div.appendChild(p);
         });
-    }
-
-    connectedCallback(){
-    }
-
-    disconnectedCallback(){
     }
 }
 

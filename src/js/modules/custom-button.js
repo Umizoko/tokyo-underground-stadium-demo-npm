@@ -1,9 +1,12 @@
-// 
-// Custom Button
-// 
-import anime from 'animejs';
 
-class CustomButton extends HTMLElement {
+ import anime from 'animejs';
+/**
+ * ホバーしたときにボーダーがモーフィングするButton
+ * 
+ * @class CustomButton: 
+ * @extends {HTMLElement}
+ */
+ class CustomButton extends HTMLElement {
 
     static get style() {
         return `

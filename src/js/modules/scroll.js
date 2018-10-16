@@ -1,8 +1,10 @@
-// 
-// ScrollのAnimation設定
-// 
 import $ from 'jquery';
 
+/**
+ * ScrollのAnimationの設定
+ *
+ * @export
+ */
 export function scroll() {
 
     window.addEventListener('load', () => {

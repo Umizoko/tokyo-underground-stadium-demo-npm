@@ -1,9 +1,11 @@
-//
-// Loding画面のAnimationを制御
-//	
 import anime from 'animejs';
 import $ from 'jquery';
 
+/**
+ * Loding画面のAnimationを制御
+ * 
+ * @export
+ */
 export function loading() {
     // 
     // cookieを利用して、クライアントが初めて訪れたかどうかを判断

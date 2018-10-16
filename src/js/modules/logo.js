@@ -1,9 +1,10 @@
-// 
-// LogoAnimation
-// 
-
 import anime from 'animejs';
 
+/**
+ * LogoのAnimation制御
+ *
+ * @export
+ */
 export function logo () {
     
     document.addEventListener("DOMContentLoaded", () => {
